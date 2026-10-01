@@ -13,9 +13,9 @@ const categoryIcons: Record<string, React.ReactNode> = {
 
 export default function CategorySection() {
   return (
-    <section className="py-24 md:py-32">
+    <section id="categories" className="py-14 md:py-20">
       <div className="container px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-12">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
             Browse By
           </p>
@@ -38,7 +38,7 @@ export default function CategorySection() {
             </Link>
           ))}
         </div>
-        <div className="text-center mt-12">
+        <div className="text-center mt-10">
           <Link
             to="/shop"
             className="inline-block text-xs tracking-[0.15em] uppercase border border-foreground text-foreground px-8 py-3 rounded-lg hover:bg-foreground hover:text-background transition-all duration-300"

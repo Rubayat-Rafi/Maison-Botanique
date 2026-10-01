@@ -1,71 +1,117 @@
 import Footer from "@/components/Footer";
 import lifestyleImage from "@/assets/lifestyle-spa.jpg";
 import ingredientsImage from "@/assets/ingredients.jpg";
+import { Sparkles, ShieldCheck, HeartHandshake, Leaf } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <main className="pt-24">
+    <main className="pt-20">
       {/* Hero */}
-      <section className="relative h-[60vh] flex items-center overflow-hidden">
+      <section className="relative h-[44vh] md:h-[50vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={lifestyleImage} alt="Our story" className="w-full h-full object-cover" loading="lazy" width={1200} height={800} />
-          <div className="absolute inset-0 bg-foreground/30" />
+          <img
+            src={lifestyleImage}
+            alt="Our story"
+            className="w-full h-full object-cover"
+            loading="lazy"
+            width={1200}
+            height={800}
+          />
+          <div className="absolute inset-0 bg-foreground/40" />
         </div>
         <div className="relative container px-6">
-          <p className="text-xs tracking-[0.3em] uppercase text-warm-white mb-4">Our Story</p>
-          <h1 className="font-serif text-5xl md:text-7xl font-light text-warm-white leading-[1.1]">
-            Beauty in<br />Its Purest Form
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-warm-white/10 backdrop-blur-md text-warm-white text-[10px] tracking-[0.25em] uppercase font-semibold mb-3 border border-warm-white/20">
+            <Sparkles size={11} className="text-gold" />
+            <span>Maison Heritage · Est. 2020</span>
+          </div>
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-light text-warm-white leading-[1.1] max-w-xl">
+            Pure Botanical Science <br />
+            <span className="italic">Without Compromise</span>
           </h1>
         </div>
       </section>
 
-      {/* Story */}
-      <section className="py-24 md:py-32">
+      {/* Story Section */}
+      <section className="py-12 md:py-16">
         <div className="container px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">Founded in 2020</p>
-              <h2 className="font-serif text-4xl font-light text-foreground leading-tight mb-6">
-                Born from a love for nature and a respect for science
+              <p className="text-xs tracking-[0.3em] uppercase text-primary font-medium mb-2">
+                Origin Story
+              </p>
+              <h2 className="font-serif text-3xl md:text-4xl font-light text-foreground leading-tight mb-5">
+                Born from a love for botany, proven by cosmetic chemistry
               </h2>
-              <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
+              <div className="space-y-3.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                 <p>
-                  Maison Botanique began in a small laboratory in the south of France, where our founder — a botanist and cosmetic chemist — sought to bridge the gap between nature and modern skincare.
+                  Maison Botanique began in a private apothecary laboratory in Grasse, France. Our founder — a botanical biochemist — set out to resolve an industry dilemma: clean formulas often lacked visible clinical potency, while clinical products relied heavily on synthetic petroleum derivatives.
                 </p>
                 <p>
-                  Frustrated by the industry's reliance on synthetic ingredients, she set out to create formulas that harness the full potency of botanical extracts without compromise. Every product is a testament to that mission.
+                  We proved that cold-pressed, bio-fermented plant actives can match or exceed synthetic benchmarks. By maintaining intact cellular envelopes during extraction, every drop preserves living antioxidants, fatty acids, and phytonutrients.
                 </p>
                 <p>
-                  Today, we source from over 30 organic farms across five continents, working directly with growers who share our commitment to sustainability and purity.
+                  Today, we partner exclusively with certified organic agricultural co-ops across France, guaranteeing 100% fair trade and traceable harvest batches.
                 </p>
               </div>
             </div>
-            <div className="overflow-hidden rounded-lg">
-              <img src={ingredientsImage} alt="Our botanical ingredients" className="w-full h-[500px] object-cover" loading="lazy" width={1024} height={1024} />
+            <div className="overflow-hidden rounded-2xl border border-border/80 shadow-md">
+              <img
+                src={ingredientsImage}
+                alt="Our botanical ingredients"
+                className="w-full h-[320px] sm:h-[380px] object-cover hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                width={1024}
+                height={1024}
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="py-24 md:py-32 bg-secondary">
+      {/* Guiding Pillars */}
+      <section className="py-12 md:py-16 bg-secondary/60 border-t border-border/60">
         <div className="container px-6">
-          <div className="max-w-2xl mx-auto text-center">
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">Our Values</p>
-            <h2 className="font-serif text-4xl font-light text-foreground mb-8">What Guides Us</h2>
-            <div className="space-y-8 text-sm text-muted-foreground leading-relaxed text-left">
-              <div className="border-b border-border pb-6">
-                <h3 className="font-serif text-xl text-foreground mb-2">Radical Transparency</h3>
-                <p>Every ingredient, every source, every process — fully traceable and fully disclosed. We believe you deserve to know exactly what goes on your skin.</p>
+          <div className="max-w-2xl mx-auto text-center mb-8 md:mb-10">
+            <p className="text-xs tracking-[0.3em] uppercase text-primary font-medium mb-2">
+              Our Core Tenets
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-light text-foreground mb-3">
+              The Principles That Guide Us
+            </h2>
+            <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+              Every formula, packaging choice, and farm partnership adheres to strict ethical standards.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
+            <div className="bg-background rounded-xl p-5 border border-border/70 shadow-sm">
+              <div className="w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center text-primary mb-3">
+                <ShieldCheck size={20} />
               </div>
-              <div className="border-b border-border pb-6">
-                <h3 className="font-serif text-xl text-foreground mb-2">Sustainable at Every Step</h3>
-                <p>From biodegradable formulas to recycled glass packaging, we minimize our environmental footprint without ever compromising on quality or efficacy.</p>
+              <h3 className="font-serif text-lg text-foreground mb-1.5 font-medium">Radical Transparency</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Full disclosure of every ingredient source, terroir of origin, and clinical efficacy metric. Zero hidden fillers.
+              </p>
+            </div>
+
+            <div className="bg-background rounded-xl p-5 border border-border/70 shadow-sm">
+              <div className="w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center text-primary mb-3">
+                <Leaf size={20} />
               </div>
-              <div>
-                <h3 className="font-serif text-xl text-foreground mb-2">Results You Can Feel</h3>
-                <p>Every formula undergoes rigorous clinical testing. We don't launch until the results are undeniable — because beautiful skin shouldn't require blind faith.</p>
+              <h3 className="font-serif text-lg text-foreground mb-1.5 font-medium">Ecological Stewardship</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                100% recyclable UV-filtering glass, FSC-certified outer cartons, and carbon-neutral transit logistics worldwide.
+              </p>
+            </div>
+
+            <div className="bg-background rounded-xl p-5 border border-border/70 shadow-sm">
+              <div className="w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center text-primary mb-3">
+                <HeartHandshake size={20} />
               </div>
+              <h3 className="font-serif text-lg text-foreground mb-1.5 font-medium">Derm-Grade Results</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Independent double-blind clinical trials for every SKU. Formulated specifically to honor and heal reactive skin barriers.
+              </p>
             </div>
           </div>
         </div>

@@ -3,19 +3,19 @@ import lifestyleImage from "@/assets/lifestyle-spa.jpg";
 
 export default function LifestyleBanner() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="grid md:grid-cols-2 min-h-[500px]">
+    <section id="ritual" className="relative overflow-hidden">
+      <div className="grid md:grid-cols-2 min-h-[460px]">
         <div className="relative">
           <img
             src={lifestyleImage}
             alt="Luxury spa setting with botanical skincare"
-            className="w-full h-full object-cover min-h-[400px]"
+            className="w-full h-full object-cover min-h-[380px]"
             loading="lazy"
             width={1200}
             height={800}
           />
         </div>
-        <div className="flex items-center bg-accent px-12 py-16 md:px-16">
+        <div className="flex items-center bg-accent px-8 py-12 md:px-14 md:py-16">
           <div>
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
               The Ritual

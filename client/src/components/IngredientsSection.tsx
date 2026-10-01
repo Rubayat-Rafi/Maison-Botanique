@@ -9,14 +9,14 @@ const ingredients = [
 
 export default function IngredientsSection() {
   return (
-    <section className="py-24 md:py-32 bg-secondary">
+    <section className="py-14 md:py-20 bg-secondary">
       <div className="container px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div className="overflow-hidden rounded-lg">
             <img
               src={ingredientsImage}
               alt="Macro photography of botanical skincare ingredients"
-              className="w-full h-[500px] object-cover"
+              className="w-full h-[420px] md:h-[480px] object-cover"
               loading="lazy"
               width={1024}
               height={1024}
@@ -31,10 +31,10 @@ export default function IngredientsSection() {
               <br />
               Nature's Finest
             </h2>
-            <p className="text-sm text-muted-foreground leading-relaxed mb-10 max-w-md">
+            <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-md">
               Every formula begins with the world's most potent botanicals — ethically sourced, cold-pressed, and handled with care to preserve their living benefits.
             </p>
-            <div className="space-y-6">
+            <div className="space-y-5">
               {ingredients.map((ing) => (
                 <div key={ing.name} className="flex items-start gap-4 border-b border-border pb-4">
                   <div>

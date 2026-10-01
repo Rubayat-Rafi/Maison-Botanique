@@ -42,10 +42,10 @@ export default function SignupPage() {
   };
 
   return (
-    <main className="pt-24">
-      <div className="container px-6 py-16 max-w-md mx-auto">
-        <h1 className="font-serif text-4xl text-foreground mb-2 text-center">Create Account</h1>
-        <p className="text-sm text-muted-foreground text-center mb-10">
+    <main className="pt-20">
+      <div className="container px-6 py-8 md:py-12 max-w-md mx-auto">
+        <h1 className="font-serif text-3xl sm:text-4xl text-foreground mb-2 text-center">Create Account</h1>
+        <p className="text-xs sm:text-sm text-muted-foreground text-center mb-6">
           Join Maison Botanique for a personalized experience.
         </p>
 

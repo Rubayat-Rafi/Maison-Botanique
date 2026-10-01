@@ -50,11 +50,11 @@ export default function ProfilePage() {
   if (authLoading) return null;
 
   return (
-    <main className="pt-24">
-      <div className="container px-6 py-16 max-w-lg mx-auto">
-        <h1 className="font-serif text-4xl text-foreground mb-10 text-center">My Account</h1>
+    <main className="pt-20">
+      <div className="container px-6 py-8 md:py-12 max-w-lg mx-auto">
+        <h1 className="font-serif text-3xl sm:text-4xl text-foreground mb-6 text-center">My Account</h1>
 
-        <div className="space-y-4 mb-10">
+        <div className="space-y-3 mb-6">
           <Link
             to="/orders"
             className="flex items-center gap-3 border border-border rounded-lg px-5 py-4 hover:bg-secondary transition-colors"

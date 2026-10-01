@@ -3,9 +3,9 @@ import ProductCard from "./ProductCard";
 
 export default function ProductGrid() {
   return (
-    <section id="shop" className="py-24 md:py-32">
+    <section id="shop" className="py-14 md:py-20">
       <div className="container px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-12">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
             The Collection
           </p>

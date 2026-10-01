@@ -11,6 +11,7 @@ export default function HeroSection() {
           className="w-full h-full object-cover"
           width={1920}
           height={1080}
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-foreground/20" />
       </div>
@@ -27,13 +28,13 @@ export default function HeroSection() {
           <p className="text-sm text-warm-white/80 leading-relaxed mb-8 max-w-sm animate-fade-in opacity-0" style={{ animationDelay: "0.6s" }}>
             Formulated with rare botanicals and backed by science. Experience skincare elevated to its purest form.
           </p>
-          <Link
-            to="/#shop"
+          <a
+            href="#shop"
             className="inline-block text-xs tracking-[0.2em] uppercase border border-warm-white text-warm-white px-8 py-3 rounded-lg hover:bg-warm-white hover:text-foreground transition-all duration-300 animate-fade-in opacity-0"
             style={{ animationDelay: "0.8s" }}
           >
             Discover Collection
-          </Link>
+          </a>
         </div>
       </div>
     </section>

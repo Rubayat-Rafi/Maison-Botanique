@@ -34,7 +34,7 @@
     --input: 36 15% 85%;
     --ring: 100 12% 45%;
 
-    --radius: 0.25rem;
+    --radius: 0.5rem;
 
     --sand: 36 33% 96%;
     --sand-dark: 33 25% 82%;
@@ -58,6 +58,11 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
   * {
     @apply border-border;
   }
@@ -80,5 +85,14 @@
   }
   .font-sans {
     font-family: var(--font-sans);
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar-none {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 }

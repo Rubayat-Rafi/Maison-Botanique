@@ -23,9 +23,9 @@ export default function ProductPage() {
   };
 
   return (
-    <main className="pt-24">
-      <div className="container px-6 py-16">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+    <main className="pt-20">
+      <div className="container px-6 py-10 md:py-12">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
           <div className="overflow-hidden rounded-lg">
             <img
               src={product.image}
@@ -35,7 +35,7 @@ export default function ProductPage() {
               height={800}
             />
           </div>
-          <div className="py-8">
+          <div className="py-4 md:py-8">
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">
               {product.size}
             </p>

@@ -68,17 +68,17 @@ export default function OrdersPage() {
 
   if (authLoading || loading) {
     return (
-      <main className="pt-24">
-        <div className="container px-6 py-16 text-center text-muted-foreground">Loading...</div>
+      <main className="pt-20">
+        <div className="container px-6 py-12 text-center text-muted-foreground">Loading orders...</div>
       </main>
     );
   }
 
   return (
-    <main className="pt-24">
-      <div className="container px-6 py-16 max-w-4xl mx-auto">
-        <h1 className="font-serif text-4xl text-foreground mb-2">My Orders</h1>
-        <p className="text-sm text-muted-foreground mb-12">Track and manage your orders.</p>
+    <main className="pt-20">
+      <div className="container px-6 py-8 md:py-10 max-w-4xl mx-auto">
+        <h1 className="font-serif text-3xl sm:text-4xl text-foreground mb-1">My Orders</h1>
+        <p className="text-xs sm:text-sm text-muted-foreground mb-6">Track and manage your botanical deliveries.</p>
 
         {orders.length === 0 ? (
           <div className="text-center py-20">

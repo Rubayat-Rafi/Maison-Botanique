@@ -13,7 +13,7 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section className="py-24 md:py-32 bg-accent">
+    <section className="py-14 md:py-20 bg-accent">
       <div className="container px-6 text-center">
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
           Stay Connected
@@ -21,7 +21,7 @@ export default function NewsletterSection() {
         <h2 className="font-serif text-4xl md:text-5xl font-light text-foreground mb-4">
           Join the Maison
         </h2>
-        <p className="text-sm text-muted-foreground mb-10 max-w-md mx-auto">
+        <p className="text-sm text-muted-foreground mb-8 max-w-md mx-auto">
           Receive early access to new launches, exclusive offers, and curated skincare rituals — delivered to your inbox.
         </p>
         <form onSubmit={handleSubmit} className="flex items-center max-w-md mx-auto gap-3">
@@ -35,6 +35,7 @@ export default function NewsletterSection() {
           <button
             type="submit"
             className="bg-primary text-primary-foreground p-3 rounded-lg hover:opacity-90 transition-opacity"
+            aria-label="Subscribe"
           >
             <Send size={16} />
           </button>

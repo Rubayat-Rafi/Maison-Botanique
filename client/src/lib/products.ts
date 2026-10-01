@@ -26,6 +26,10 @@ export interface Product {
   ingredients: string[];
   size: string;
   category: Category;
+  rating?: number;
+  reviewsCount?: number;
+  badge?: string;
+  howToUse?: string;
 }
 
 export const products: Product[] = [
@@ -39,6 +43,10 @@ export const products: Product[] = [
     ingredients: ["Vitamin C", "Hyaluronic Acid", "Rosehip Extract", "Jojoba Oil"],
     size: "30ml",
     category: "Serums",
+    rating: 4.9,
+    reviewsCount: 142,
+    badge: "Best Seller",
+    howToUse: "Dispense 3-4 drops onto freshly cleansed fingertips. Gently press into face, neck, and décolleté until fully absorbed before applying moisturizer.",
   },
   {
     id: "nourish-cream",
@@ -50,6 +58,10 @@ export const products: Product[] = [
     ingredients: ["Shea Butter", "Ceramide Complex", "Squalane", "Chamomile"],
     size: "50ml",
     category: "Moisturizers",
+    rating: 4.8,
+    reviewsCount: 98,
+    badge: "Award Winner",
+    howToUse: "Warm a pea-sized amount between your fingertips and smooth upward over face and neck morning and night.",
   },
   {
     id: "botanical-oil",
@@ -61,6 +73,10 @@ export const products: Product[] = [
     ingredients: ["Argan Oil", "Marula Oil", "Evening Primrose", "Vitamin E"],
     size: "30ml",
     category: "Oils",
+    rating: 5.0,
+    reviewsCount: 215,
+    badge: "Editor's Choice",
+    howToUse: "Press 2-3 drops as the final step of your nighttime ritual to lock in active botanicals and moisture.",
   },
   {
     id: "gentle-cleanser",
@@ -72,6 +88,10 @@ export const products: Product[] = [
     ingredients: ["Green Tea", "Aloe Vera", "Glycerin", "Cucumber Extract"],
     size: "150ml",
     category: "Cleansers",
+    rating: 4.9,
+    reviewsCount: 87,
+    badge: "Customer Favorite",
+    howToUse: "Massage 1-2 pumps onto damp skin in circular motions for 60 seconds. Rinse thoroughly with lukewarm water.",
   },
   {
     id: "hydra-toner",
@@ -83,6 +103,10 @@ export const products: Product[] = [
     ingredients: ["Rose Water", "Niacinamide", "Witch Hazel", "Lavender"],
     size: "120ml",
     category: "Toners",
+    rating: 4.8,
+    reviewsCount: 64,
+    badge: "Essential Step",
+    howToUse: "Mist generously over clean face and neck with eyes closed. Gently pat in or allow to absorb before serum.",
   },
   {
     id: "revive-eye-cream",
@@ -94,5 +118,9 @@ export const products: Product[] = [
     ingredients: ["Peptide Complex", "Caffeine", "Retinol", "Avocado Oil"],
     size: "15ml",
     category: "Eye Care",
+    rating: 4.9,
+    reviewsCount: 119,
+    badge: "Clinical Favorite",
+    howToUse: "Dab a rice-grain amount along the orbital bone using your ring finger. Tap gently from inner to outer corner.",
   },
 ];

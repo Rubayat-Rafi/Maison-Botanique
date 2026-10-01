@@ -2,11 +2,11 @@ import Footer from "@/components/Footer";
 
 export default function TermsPage() {
   return (
-    <main className="pt-24">
-      <div className="container px-6 py-16">
+    <main className="pt-20">
+      <div className="container px-6 py-8 md:py-12">
         <div className="max-w-3xl mx-auto">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Legal</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-light text-foreground mb-12">Terms of Service</h1>
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-2">Legal</p>
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-foreground mb-6 md:mb-8 pb-3 border-b border-border/60">Terms of Service</h1>
 
           <div className="space-y-8 text-sm text-muted-foreground leading-relaxed">
             <p className="text-xs text-muted-foreground">Last updated: April 11, 2026</p>
